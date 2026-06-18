@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8";>
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>Service Section </title>
+    
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 20px;
+        }
+            .service-section{
+                background: #222;
+                padding: 40px 20px;
+                max-width: 1200px;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0 0 0 0.3);
+
+            }
+            .service-section h2{
+                text-align: center;
+                color: #fff;
+                font-size: 28px;
+                margin-bottom: 30px;
+
+            }
+            .service-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+                gap: 20px;
+            }
+
+            .service-box{
+                background: #222;
+                color: #fff;
+                text-align: center;
+                padding: 30px 20px;
+                border-radius: 10px;
+                transition: 0.03s ease-in-out;
+            }
+            .service-box:hover{
+                transform: translateY(-8px);
+                box-shadow: 0 6px 15px
+                rgba(0 0 0 0.5);
+
+            }
+            .service-box:active{
+                background: #e67e22;
+
+            }
+            .service-box i{
+                font-size: 40px;
+                margin-bottom: 15px;
+                display: block;
+            }
+            .service-box h3{
+                color: #e67e22;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .service-box.active h3{
+                color: #fff;
+            }
+            .service-box p{
+                font-size: 14px;
+                color: #ccc;
+            }
+    </style>
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: #fff;font-size: 50px; ">Responsive Serivce Section Design</h1>
+        <div class="service-section">
+            <h2>OUR SERVICES</h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, harum.</p>
+                </div>
+                    <div class="service-box active">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, placeat!</p>
+                </div>
+                <div class="card mx-2 col-3">
+                <div class="service-box">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nisi?</p>
+                </div>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, perferendis.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Advertising</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, eos?</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-wordpress"></i>
+                    <h3>Wordpress</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, molestias.</p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
